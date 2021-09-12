@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 93.75rem;
+    height:47.50rem;
+    border: 2px black solid;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color:#E7F62C;
+    border-radius: 100%;
+    animation-name: pilota, rebote1, rebote2, rebote3;
+    animation-duration: 7s;
+    animation-delay: 2s, 3.2s, 5.6s, 6.7s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.linea1{
+    border: 4px #fff solid;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+@keyframes pilota {
+    0% {
+        left: 0;
+        top:0;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: translateY(41rem) translateX(25.50rem); 
+        animation-timing-function: linear;
+    }
+    34%{
+        transform: translateY(0rem) translateX(60rem);
+        animation-timing-function: linear;
+    }
+    51%{
+        transform: translateY(25rem) translateX(87.50rem);
+        animation-timing-function: linear;
+    }
+    68%{
+        transform: translateY(42rem) translateX(63.50rem);
+        animation-timing-function: linear;
+    }
+    100%{
+        
+    }   
+
+}
+
+@keyframes rebote1 { 
+    0% {
+        width: 110px;
+        height: 80px;
+    }
+    20%{
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        width: 100px;
+    }
+  }
+
+@keyframes rebote2 {
+    0%{
+        width: 85px;
+        height: 100px;
+    }
+    20%{
+        width: 100px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+@keyframes rebote3{
+    0%{
+        width: 100px;
+        height: 80px;
+    }
+    20%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{}
+} 
+
+
+
+
+
+
+
+

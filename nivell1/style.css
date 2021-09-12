@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 93.75rem;
+    height:47.50rem;
+    border: 2px black solid;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color:#E7F62C;
+    border-radius: 100%;
+    animation-name: pilota;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.linea1{
+    border: 4px #fff solid;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+
+
+@keyframes pilota {
+    0% {
+        left: 0;
+        top:0;
+    }
+    17% {
+        transform: translateY(41rem) translateX(25.50rem); 
+    }
+    34%{
+        transform: translateY(0rem) translateX(60rem);;
+    }
+    51%{
+        transform: translateY(25rem) translateX(87.50rem);
+    }
+    68%{
+        transform: translateY(41rem) translateX(60.50rem);
+    }
+    100%{
+        
+    }
+    
+}
+
